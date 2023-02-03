@@ -11,10 +11,12 @@
 
 with source_data as (
 
-    select 1 as id
+    /*select 1 as id
     union all
     select null as id
-
+*/
+select * from snowflake_sample_data.tpch_sf10.customer c join snowflake_sample_data.tpch_sf10.orders o on c.
+c_custkey = o.o_custkey limit 10
 )
 
 select *
